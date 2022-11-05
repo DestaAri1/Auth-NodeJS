@@ -1,0 +1,25 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJEZXN0YSIsImVtYWlsIjoiZGVzdGEuYXJpQGdtYWlsLmNvbSIsImlhdCI6MTY2NzYzNjI1MiwiZXhwIjoxNjY3NjM2MjY3fQ.cOoupB6e5IRv9UtX4LLOCLduySC2fvMF7mvf0ufYxKA
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "Alfa",
+    "email": "desta@gmail.com",
+    "password" : "destaari",
+    "cpassword": "destaari"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "desta.ari@gmail.com",
+    "password": "destaari"
+}
+
+###
+GET http://localhost:5000/token
